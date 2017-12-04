@@ -12,7 +12,7 @@
   .navigation.scrollUp {
     transform: translateY(-70px); }
   .navigation a {
-    font-family: Comic Sans MS, Comic Sans, cursive; }
+    font-family: Arial Black, Times; }
   .navigation .icon-bar {
     display: none;
     position: fixed;
@@ -165,7 +165,7 @@ nav {
   background-color: #fff;
   padding: 50px; }
   #skill-section .container-fluid {
-    font-family: Comic Sans MS, Comic Sans, cursive; }
+    font-family: Helvetica, Verdana; }
     #skill-section .container-fluid h1 {
       font-size: 3em;
       text-align: center; }
@@ -251,7 +251,7 @@ header {
           opacity: 1;
         };*/ }
   header h3 {
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Helvetica, Verdana;
     color: #fff;
     opacity: 0.8;
     font-size: 1em; }
@@ -264,7 +264,7 @@ header {
   clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%); }
   #about-section .main-intro {
     text-align: center;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Helvetica, Verdana;
     font-size: 2em;
     min-width: 100px; }
   #about-section .buttonwrapper {
@@ -278,7 +278,7 @@ header {
     color: #fff;
     background-color: #06b4f9;
     cursor: pointer;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Helvetica, Verdana;
     font-size: 1.3em;
     padding: 20px 5px;
     width: 180px;
@@ -318,13 +318,13 @@ header {
     padding: 20px 200px;
     width: 100%; }
   #about-section h4 {
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Helvetica, Verdana;
     line-height: 1.5; }
 
 #other-skills .others {
   padding-bottom: 30px;
   font-size: 1.8em;
-  font-family: Comic Sans MS, Comic Sans, cursive; }
+  font-family: Helvetica, Verdana; }
 #other-skills .other-wrapper {
   width: 95%;
   padding: 50px 40px;
@@ -346,7 +346,7 @@ header {
     #project-section .project-wrapper .others {
       padding-bottom: 30px;
       font-size: 1.8em;
-      font-family: Comic Sans MS, Comic Sans, cursive;
+      font-family: Helvetica, Verdana;
       text-align: center; }
     #project-section .project-wrapper .caption p {
       line-height: 1.7;
