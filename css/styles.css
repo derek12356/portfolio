@@ -251,7 +251,7 @@ header {
           opacity: 1;
         };*/ }
   header h3 {
-    font-family: Helvetica, Verdana;
+    font-family: Helvetica, Verdana, Georgia;
     color: #fff;
     opacity: 0.8;
     font-size: 1em; }
@@ -264,7 +264,7 @@ header {
   clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%); }
   #about-section .main-intro {
     text-align: center;
-    font-family: Helvetica, Verdana;
+    font-family: Helvetica, Verdana, Georgia;
     font-size: 2em;
     min-width: 100px; }
   #about-section .buttonwrapper {
@@ -278,7 +278,7 @@ header {
     color: #fff;
     background-color: #06b4f9;
     cursor: pointer;
-    font-family: Helvetica, Verdana;
+    font-family: Helvetica, Verdana, Georgia;
     font-size: 1.3em;
     padding: 20px 5px;
     width: 180px;
@@ -318,13 +318,13 @@ header {
     padding: 20px 200px;
     width: 100%; }
   #about-section h4 {
-    font-family: Helvetica, Verdana;
+    font-family: Helvetica, Verdana, Georgia;
     line-height: 1.5; }
 
 #other-skills .others {
   padding-bottom: 30px;
   font-size: 1.8em;
-  font-family: Helvetica, Verdana; }
+  font-family: Helvetica, Verdana, Georgia; }
 #other-skills .other-wrapper {
   width: 95%;
   padding: 50px 40px;
@@ -346,7 +346,7 @@ header {
     #project-section .project-wrapper .others {
       padding-bottom: 30px;
       font-size: 1.8em;
-      font-family: Helvetica, Verdana;
+      font-family: Helvetica, Verdana, Georgia;
       text-align: center; }
     #project-section .project-wrapper .caption p {
       line-height: 1.7;
