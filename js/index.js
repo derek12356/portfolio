@@ -75,6 +75,17 @@ $(document).ready(function(){
               scrollTop:0
             }, 'slow');
         });
+      $(".navigation .brandone a[href^='#']").on('click',function(e){
+            $('html, body').animate({
+              scrollTop:0
+            }, 'slow');
+      });
+      $(".navigation .homenav a[href^='#']").on('click',function(e){
+            $('html, body').animate({
+              scrollTop:0
+            }, 'slow');
+      });
+
 
 
 
