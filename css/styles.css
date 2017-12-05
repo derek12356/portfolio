@@ -218,11 +218,15 @@ header {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
   margin-top: 30px;
   background-image: url("../img/headerimg.jpg");
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   background-attachment: fixed;
   background-position: 10%;
   background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
   header .profile-image {
     cursor: pointer;
