@@ -12,7 +12,7 @@
   .navigation.scrollUp {
     transform: translateY(-70px); }
   .navigation a {
-    font-family: Arial Black, Times; }
+    font-family: Arial Black, Verdana; }
   .navigation .icon-bar {
     display: none;
     position: fixed;
