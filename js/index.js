@@ -34,15 +34,18 @@ $(document).ready(function(){
       currentScrollTop = a;
      
 
-      if (c < currentScrollTop && a > b + b) {
+      if (c < currentScrollTop && a > b + b + b) {
           navbar.addClass("scrollUp"); 
           iconbar.fadeIn("slow");
       }
       else if (c > currentScrollTop && !(a <= b)) {
         navbar.removeClass("scrollUp");
-        iconbar.fadeOut("slow");
+       
       }
-        c = currentScrollTop;
+      else if(c > currentScrollTop ){
+         iconbar.fadeOut("slow");
+      }
+      c = currentScrollTop;
     });
 
     //smooth scrolling on the page
