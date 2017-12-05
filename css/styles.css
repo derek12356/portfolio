@@ -262,7 +262,7 @@ header {
 #about-section {
   margin-top: -100px;
   height: auto;
-  padding: 30% 5%;
+  padding: 30% 5% 10% 5%;
   background-color: #e6f7fe; }
   #about-section .main-intro {
     text-align: center;
@@ -451,7 +451,7 @@ footer {
     font-size: 1.5em; } }
 @media screen and (min-width: 1024px) {
   #about-section {
-    padding: 10% 10%; }
+    padding: 20% 0% 10%; }
 
   #project-section .project-wrapper .caption p {
     text-align: justify; } }
