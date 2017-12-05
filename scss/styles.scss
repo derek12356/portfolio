@@ -154,11 +154,7 @@ header{
 }
 
 #other-skills{
-  .others{
-    padding-bottom: 30px;
-    font-size:1.8em;
-    font-family:$comic-font; 
-  }
+
   .other-wrapper{
    width:95%;
    padding:50px 40px;
@@ -169,6 +165,11 @@ header{
       flex:0 1 auto;
       justify-content: space-around;
    }
+    .others{
+    padding-bottom: 30px;
+    font-size:1.8em;
+    font-family:$comic-font; 
+  }
   } 
   .other-icon{
    width:150px;
@@ -183,7 +184,6 @@ header{
    padding:30px 10px;
 
    .others{
-    padding-bottom: 30px;
     font-size:1.8em;
     font-family:$comic-font;
     text-align: center;
@@ -336,6 +336,9 @@ footer{
 
    #other-skills{
     .other-wrapper{
+      .others{
+        font-size: 1.5em;
+      }
       .other-icon{
       width:150px;
       padding:15px 40px;
@@ -346,6 +349,9 @@ footer{
     .project-wrapper{
       .caption p {
         text-align: center;
+      }
+      .others{
+        font-size:1.5em;
       }
     }
    }

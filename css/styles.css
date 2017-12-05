@@ -323,10 +323,6 @@ header {
     font-family: Helvetica, Verdana, Georgia;
     line-height: 1.5; }
 
-#other-skills .others {
-  padding-bottom: 30px;
-  font-size: 1.8em;
-  font-family: Helvetica, Verdana, Georgia; }
 #other-skills .other-wrapper {
   width: 95%;
   padding: 50px 40px;
@@ -336,6 +332,10 @@ header {
     flex-wrap: wrap;
     flex: 0 1 auto;
     justify-content: space-around; }
+  #other-skills .other-wrapper .others {
+    padding-bottom: 30px;
+    font-size: 1.8em;
+    font-family: Helvetica, Verdana, Georgia; }
 #other-skills .other-icon {
   width: 150px;
   padding: 30px 30px; }
@@ -346,7 +346,6 @@ header {
     width: 95%;
     padding: 30px 10px; }
     #project-section .project-wrapper .others {
-      padding-bottom: 30px;
       font-size: 1.8em;
       font-family: Helvetica, Verdana, Georgia;
       text-align: center; }
@@ -440,12 +439,16 @@ footer {
     #skill-section .container-fluid .skill-wrapper .skills-bar-container .percent {
       font-size: 0.3em; }
 
+  #other-skills .other-wrapper .others {
+    font-size: 1.5em; }
   #other-skills .other-wrapper .other-icon {
     width: 150px;
     padding: 15px 40px; }
 
   #project-section .project-wrapper .caption p {
-    text-align: center; } }
+    text-align: center; }
+  #project-section .project-wrapper .others {
+    font-size: 1.5em; } }
 @media screen and (min-width: 1024px) {
   #about-section {
     padding: 10% 10%; }
