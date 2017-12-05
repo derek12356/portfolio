@@ -345,6 +345,10 @@ header {
   #project-section .project-wrapper {
     width: 95%;
     padding: 30px 10px; }
+    #project-section .project-wrapper img {
+      margin: 30px 0px;
+      width: 100%;
+      border-radius: 10px; }
     #project-section .project-wrapper .others {
       font-size: 1.8em;
       font-family: Helvetica, Verdana, Georgia;
@@ -368,10 +372,6 @@ header {
       opacity: 0.4; }
     #project-section .project-wrapper a:hover .overlay .text {
       opacity: 1; }
-  #project-section img {
-    margin: 50px 0;
-    width: 100%;
-    border-radius: 10px; }
 
 footer {
   width: 100%;
