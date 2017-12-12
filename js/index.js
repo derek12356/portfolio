@@ -19,9 +19,7 @@ $(document).ready(function(){
 
     });
     
-    
-
-    //hiding navbar on scroll down
+    //hiding navbar on scroll down and show sidebar 
     'use strict';
   
     var c, currentScrollTop = 0,
@@ -80,7 +78,7 @@ $(document).ready(function(){
               scrollTop:0
             }, 'slow');
       });
-      $(".navigation .homenav a[href^='#']").on('click',function(e){
+      $(".navigation .nav-list a[href^='#']").on('click',function(e){
             $('html, body').animate({
               scrollTop:0
             }, 'slow');
