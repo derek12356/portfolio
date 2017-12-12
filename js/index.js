@@ -66,19 +66,19 @@ $(document).ready(function(){
                 window.location.hash = this.hash;
             });
         });
-      $("nav .icon-bar .toppage a[href^='#']").on('click', function(e){
+        $("nav .icon-bar .toppage a[href^='#']").on('click', function(e){
            e.preventDefault();
             
             $('html, body').animate({
               scrollTop:0
             }, 'slow');
         });
-      $(".navigation .brandone a[href^='#']").on('click',function(e){
+       $(".navigation .brandone a[href^='#']").on('click',function(e){
             $('html, body').animate({
               scrollTop:0
             }, 'slow');
       });
-      $(".navigation .nav-list a[href^='#']").on('click',function(e){
+       $(".navigation .nav-list a[href^='#']").on('click',function(e){
             $('html, body').animate({
               scrollTop:0
             }, 'slow');
