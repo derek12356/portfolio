@@ -78,15 +78,6 @@ $(document).ready(function(){
               scrollTop:0
             }, 'slow');
       });
-       $(".navigation .nav-list a[href^='#']").on('click',function(e){
-            $('html, body').animate({
-              scrollTop:0
-            }, 'slow');
-      });
-
-
-
-
 
      //more about me 
 
