@@ -85,8 +85,9 @@ header{
   padding: 20px 5px;
   width: 180px;
   border-radius: 10px;
+  border:2px solid #fff;
   overflow: hidden;
-  box-shadow: 5px 5px 20px #92a4b5;
+  box-shadow: 2px 2px 8px #92a4b5;
 }
 .aboutbutton{
      transition: all 0.2s linear 0s;
@@ -114,7 +115,8 @@ header{
       transform: scale(1,1);
       text-indent: 0;
       color:#767982;
-       background-color: #fff;
+      background-color: #fff;
+
     }
    }
   }
