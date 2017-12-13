@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Derek_Portfolio</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles.min.css">
   <link rel='icon' href='img/linkinpark.jpg'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -226,6 +226,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	  <script src="js/index.js"></script>
+	  <script>$(document).ready(function(){$('#nav-toggle').click(function(e){e.stopPropagation();$('nav ul').slideToggle()});$('#nav-toggle').on('click',function(){this.classList.toggle('active')});$('nav').mouseleave(function(){$(window).click(function(){$('nav ul').slideUp();$('#nav-toggle').removeClass('active')})});'use strict';var c,currentScrollTop=0,navbar=$('.navigation');iconbar=$('.icon-bar');$(window).scroll(function(){var a=$(window).scrollTop();var b=navbar.height();currentScrollTop=a;if(c<currentScrollTop&&a>b+b+b){navbar.addClass("scrollUp");iconbar.fadeIn("slow")}
+      else if(c>currentScrollTop&&!(a<=b)){navbar.removeClass("scrollUp")}
+      else if(c>currentScrollTop){iconbar.fadeOut("slow")}
+      c=currentScrollTop});$("nav ul li a[href^='#']").on('click',function(e){e.preventDefault();$('html, body').animate({scrollTop:$(this.hash).offset().top},500,function(){window.location.hash=this.hash})});$("nav .icon-bar .otherpage a[href^='#']").on('click',function(e){e.preventDefault();$('html, body').animate({scrollTop:$(this.hash).offset().top},500,function(){window.location.hash=this.hash})});$("nav .icon-bar .toppage a[href^='#']").on('click',function(e){e.preventDefault();$('html, body').animate({scrollTop:0},'slow')});$(".navigation .brandone a[href^='#']").on('click',function(e){$('html, body').animate({scrollTop:0},'slow')});$('.aboutbutton').on('click',function(e){e.preventDefault();var $this=$(this);var $collapse=$this.closest('#about-section').find('.collapse');$collapse.collapse('toggle')});var $skillSection=$('.skill-wrapper');var skillIsVisible=!1;$(window).scroll(function(){var bottom_of_window=$(window).scrollTop()+$(window).height();var middle_of_skillSection=$skillSection.offset().top+$skillSection.outerHeight()/2;if((bottom_of_window>middle_of_skillSection)&&(skillIsVisible==!1)){$('.skills-bar-container li').each(function(){var $barContainer=$(this).find('.bar-container');var dataPercent=parseInt($barContainer.data('percent'));var elem=$(this).find('.progressbar');var percent=$(this).find('.percent');var width=0;var id=setInterval(frame,15);function frame(){if(width>=dataPercent){clearInterval(id)}else{width++;elem.css("width",width+"%");percent.html(width+" %")}}});skillIsVisible=!0}})})</script>
 </body>
 </html>
