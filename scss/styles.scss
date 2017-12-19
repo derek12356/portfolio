@@ -156,7 +156,7 @@ header{
    text-align:center;
    .row{
       display: flex;
-      flex-wrap:wrap;
+      flex-wrap: nowrap;
       flex:0 1 auto;
       justify-content: space-around;
    }
@@ -262,7 +262,17 @@ footer{
       
     
    }
+@media screen and (max-width:576px){
 
+   #other-skills{
+    .other-wrapper{
+      .row{
+        flex-wrap: wrap;
+      } 
+    }
+   }
+
+}
 
 @media screen and (max-width:769px){
  

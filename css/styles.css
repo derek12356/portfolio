@@ -320,7 +320,7 @@ header {
   text-align: center; }
   #other-skills .other-wrapper .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex: 0 1 auto;
     justify-content: space-around; }
   #other-skills .other-wrapper .others {
@@ -396,6 +396,9 @@ footer {
   footer .github {
     background-image: url("../img/git.png"); }
 
+@media screen and (max-width: 576px) {
+  #other-skills .other-wrapper .row {
+    flex-wrap: wrap; } }
 @media screen and (max-width: 769px) {
   header {
     background-attachment: scroll; }
