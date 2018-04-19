@@ -460,6 +460,9 @@ header h3 {
   padding: 50px 40px;
   text-align: center;
 }
+#other-skills .other-wrapper:hover .other-icon:not(:hover) {
+  transform: scale(0.7);
+}
 #other-skills .other-wrapper .row {
   display: flex;
   flex-wrap: nowrap;
@@ -474,6 +477,10 @@ header h3 {
 #other-skills .other-icon {
   width: 150px;
   padding: 30px 30px;
+  transition: all 0.3s;
+}
+#other-skills .other-icon:hover {
+  transform: scale(1.5);
 }
 
 #project-section {
