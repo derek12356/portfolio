@@ -82,7 +82,7 @@ $(document).ready(function(){
      //more about me 
 
 
-     $('.aboutbutton').on('click', function(e){
+     $('.about-btn').on('click', function(e){
            e.preventDefault();
             var $this = $(this);
             var $collapse = $this.closest('#about-section').find('.collapse');

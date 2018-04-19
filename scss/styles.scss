@@ -1,6 +1,7 @@
 // Navigation Variables
 @import 'nav';
 @import 'skillbar';
+@import 'animation';
 $comic-font: Helvetica, Verdana, Georgia; 
 * {
   margin: 0;
@@ -19,7 +20,7 @@ header{
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);*/
   position: relative;
   margin-top:0px;
-  background-image: url("../img/meters.jpg");
+  background-image: url("../img/headerimg.jpg");
   max-width: 100%;
   height:100%;
   background-attachment: fixed;
@@ -27,6 +28,7 @@ header{
   background-repeat: no-repeat;
   background-size: cover; 
   .profile-image{
+  position:relative;
   cursor: pointer;
   margin-top: 180px;
   width: 150px;
@@ -35,11 +37,20 @@ header{
   border: 3px solid white;
   transition: all .5s;
   &:hover{
-      transform: scale(1.2) rotate(-360deg);
+      transform: scale(1.2);
   };
 }
+
+
+
  .intro{
     text-align: center;
+    .introname{
+      animation:moveInLeft 1s ease-out; 
+    }
+    .prof{
+      animation:moveInRight 1s ease-out;
+    }
   }
   h1{  
       font-size:1.5em;
@@ -73,26 +84,56 @@ header{
   }
 .effect {
  
+
+  /*border:2px solid #fff;*/
+  /*overflow: hidden;*/
+  /*box-shadow: 2px 2px 8px #92a4b5;*/
+}
+.about-btn{
   text-align: center;
   display: inline-block;
   position: relative;
   text-decoration: none;
-  color: #fff;
-  background-color:  #4a4d54;
   cursor: pointer; 
   font-family:$comic-font;
   font-size: 1.3em;
   padding: 20px 5px;
-  width: 180px;
-  border-radius: 10px;
-  border:2px solid #fff;
-  overflow: hidden;
-  box-shadow: 2px 2px 8px #92a4b5;
+  width: 220px;
+  border-radius: 25px;
+&:hover{
+  color: #fff;
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.5);
+  &::after{
+  z-index:-1;
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+    }
 }
-.aboutbutton{
+&-white{
+        background-color: #5e8ab1;
+        color: #fff;
+        &::after {
+            background-color:#5e8ab1;
+        }
+    }
+&-animated{
+     animation-fill-mode: backwards;
      transition: all 0.2s linear 0s;
-
-    &:before{
+}
+&::after{
+    content:"";
+    display: inline-block;
+    height:100%;
+    width:100%;
+    border-radius: 25px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    transition: all .4s;
+   };   
+/*    &:before{
         content: "\f05a";
         display: flex;
         align-items: center;
@@ -106,8 +147,8 @@ header{
         font-family: FontAwesome;
         transform:scale(0,1);
         transition: all 0.2s linear 0s;
-    }
-     &:hover {
+    }*/
+/*     &:hover {
        text-indent: -9999px;
 
     
@@ -118,7 +159,8 @@ header{
       background-color: #fff;
 
     }
-   }
+   }*/
+
   }
 
   
@@ -359,10 +401,8 @@ footer{
       }
     }
    }
-
-
-
 }
+
 @media screen and (min-width: 1024px) {
 
   #about-section{
