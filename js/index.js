@@ -54,7 +54,8 @@ $(document).ready(function(){
             $('html, body').animate({
                scrollTop: $(this.hash).offset().top 
             }, 500, function() {
-                window.location.hash = this.hash;
+                 $('nav ul').slideUp();
+                 $('#nav-toggle').removeClass('active');
             });
         });
         $("nav .icon-bar .otherpage a[href^='#']").on('click', function(e){
@@ -62,9 +63,7 @@ $(document).ready(function(){
             
             $('html, body').animate({
                scrollTop: $(this.hash).offset().top 
-            }, 500, function() {
-                window.location.hash = this.hash;
-            });
+            }, 500);
         });
         $("nav .icon-bar .toppage a[href^='#']").on('click', function(e){
            e.preventDefault();
@@ -91,7 +90,7 @@ $(document).ready(function(){
 
      //skill bar 
 
-             var $skillSection = $('.skill-wrapper');
+        var $skillSection = $('.skill-wrapper');
         var skillIsVisible = false;
         $(window).scroll(function(){
             var bottom_of_window = $(window).scrollTop() + $(window).height();

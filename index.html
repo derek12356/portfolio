@@ -5,7 +5,7 @@
 	<title>Derek_Portfolio</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
-  <link rel='icon' href='img/linkinpark.jpg'>
+    <link rel='icon' href='img/linkinpark.jpg'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -17,7 +17,7 @@
       <a href="#">Derek</a>
     </h3>
     <nav>
-      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
       <ul class="nav-list">
         <li><a href="">Home</a></li>
         <li><a href="#about-section">About</a></li> 
@@ -201,7 +201,7 @@
          </div>
        </a>
          <div class='caption'>
-           <p>The e-commerce project is based on Opencart platform. Developed and implement web functions significantly improved user experience and usability.Technologies applied:HTML5, CSS, jQuery, Ajax, mySQL and PHP.</p>
+           <p>The e-commerce project is based on Opencart platform. Developed and implemented web functions significantly improved user experience and usability.Technologies applied:HTML5, CSS, jQuery, Ajax, mySQL and PHP.</p>
          </div>
       </div>
       <div class='project col-sm-4'>
@@ -268,9 +268,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	  <script>$(document).ready(function(){$('#nav-toggle').click(function(e){e.stopPropagation();$('nav ul').slideToggle()});$('#nav-toggle').on('click',function(){this.classList.toggle('active')});$('nav').mouseleave(function(){$(window).click(function(){$('nav ul').slideUp();$('#nav-toggle').removeClass('active')})});'use strict';var c,currentScrollTop=0,navbar=$('.navigation');iconbar=$('.icon-bar');$(window).scroll(function(){var a=$(window).scrollTop();var b=navbar.height();currentScrollTop=a;if(c<currentScrollTop&&a>b+b+b){navbar.addClass("scrollUp");iconbar.fadeIn("slow")}
-      else if(c>currentScrollTop&&!(a<=b)){navbar.removeClass("scrollUp")}
-      else if(c>currentScrollTop){iconbar.fadeOut("slow")}
-      c=currentScrollTop});$("nav ul li a[href^='#']").on('click',function(e){e.preventDefault();$('html, body').animate({scrollTop:$(this.hash).offset().top},500,function(){window.location.hash=this.hash})});$("nav .icon-bar .otherpage a[href^='#']").on('click',function(e){e.preventDefault();$('html, body').animate({scrollTop:$(this.hash).offset().top},500,function(){window.location.hash=this.hash})});$("nav .icon-bar .toppage a[href^='#']").on('click',function(e){e.preventDefault();$('html, body').animate({scrollTop:0},'slow')});$(".navigation .brandone a[href^='#']").on('click',function(e){$('html, body').animate({scrollTop:0},'slow')});$('.about-btn').on('click',function(e){e.preventDefault();var $this=$(this);var $collapse=$this.closest('#about-section').find('.collapse');$collapse.collapse('toggle')});var $skillSection=$('.skill-wrapper');var skillIsVisible=!1;$(window).scroll(function(){var bottom_of_window=$(window).scrollTop()+$(window).height();var middle_of_skillSection=$skillSection.offset().top+$skillSection.outerHeight()/2;if((bottom_of_window>middle_of_skillSection)&&(skillIsVisible==!1)){$('.skills-bar-container li').each(function(){var $barContainer=$(this).find('.bar-container');var dataPercent=parseInt($barContainer.data('percent'));var elem=$(this).find('.progressbar');var percent=$(this).find('.percent');var width=0;var id=setInterval(frame,15);function frame(){if(width>=dataPercent){clearInterval(id)}else{width++;elem.css("width",width+"%");percent.html(width+" %")}}});skillIsVisible=!0}})})</script>
+	  <script>$(document).ready(function(){$("#nav-toggle").click(function(o){o.stopPropagation(),$("nav ul").slideToggle()}),$("#nav-toggle").on("click",function(){this.classList.toggle("active")}),$("nav").mouseleave(function(){$(window).click(function(){$("nav ul").slideUp(),$("#nav-toggle").removeClass("active")})});var o,n=0,t=$(".navigation");iconbar=$(".icon-bar"),$(window).scroll(function(){var a=$(window).scrollTop(),e=t.height();o<(n=a)&&a>e+e+e?(t.addClass("scrollUp"),iconbar.fadeIn("slow")):o>n&&!(a<=e)?t.removeClass("scrollUp"):o>n&&iconbar.fadeOut("slow"),o=n}),$("nav ul li a[href^='#']").on("click",function(o){o.preventDefault(),$("html, body").animate({scrollTop:$(this.hash).offset().top},500,function(){$("nav ul").slideUp(),$("#nav-toggle").removeClass("active")})}),$("nav .icon-bar .otherpage a[href^='#']").on("click",function(o){o.preventDefault(),$("html, body").animate({scrollTop:$(this.hash).offset().top},500)}),$("nav .icon-bar .toppage a[href^='#']").on("click",function(o){o.preventDefault(),$("html, body").animate({scrollTop:0},"slow")}),$(".navigation .brandone a[href^='#']").on("click",function(o){$("html, body").animate({scrollTop:0},"slow")}),$(".about-btn").on("click",function(o){o.preventDefault(),$(this).closest("#about-section").find(".collapse").collapse("toggle")});var a=$(".skill-wrapper"),e=!1;$(window).scroll(function(){$(window).scrollTop()+$(window).height()>a.offset().top+a.outerHeight()/2&&0==e&&($(".skills-bar-container li").each(function(){var o=$(this).find(".bar-container"),n=parseInt(o.data("percent")),t=$(this).find(".progressbar"),a=$(this).find(".percent"),e=0,l=setInterval(function(){e>=n?clearInterval(l):(e++,t.css("width",e+"%"),a.html(e+" %"))},15)}),e=!0)})});</script>
 </body>
 </html>
